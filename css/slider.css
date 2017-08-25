@@ -1,0 +1,45 @@
+ul {
+  height: 400px;
+  width: 225px;
+  margin: 0 auto;
+  list-style: none;
+  position: relative;
+}
+
+ul li {
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.6s ease-in;
+  opacity: 0;
+  margin-top: 10px;
+}
+
+ul li img {
+  width: 100%;
+  cursor: pointer;
+}
+
+li.active {
+  z-index: 999;
+  opacity: 1;
+}
+
+li.left2 {
+  transform: perspective(600px) translateX(-160%) rotateY(-40deg) scale(0.5);
+  opacity: 1;
+}
+
+li.left1 {
+  transform: translateX(-102%) scale(0.8);
+  opacity: 1;
+}
+
+li.right1 {
+  transform: translateX(102%) scale(0.8);
+  opacity: 1;
+}
+
+li.right2 {
+  transform: perspective(600px) translateX(160%) rotateY(40deg) scale(0.5);
+  opacity: 1;
+}
